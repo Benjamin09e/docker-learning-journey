@@ -1,0 +1,13 @@
+# Fichiers Git
+.git
+.gitignore
+
+# Dépendances
+node_modules
+
+# IDE
+.vscode
+.idea
+
+# Documentation
+README.md

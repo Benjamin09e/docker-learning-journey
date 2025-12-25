@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site Docker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-docker"></i>
+                    <span>DockerSite</span>
+                </div>
+                <nav>
+                    <div class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul id="navMenu">
+                        <li><a href="#" class="active"><i class="fas fa-home"></i> Accueil</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> À propos</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="#" id="themeToggle"><i class="fas fa-moon"></i> Thème</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>   
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="fade-in">Bienvenue sur mon site Docker</h1>
+                    <p class="subtitle">Ceci est une page web statique servie par un conteneur Docker utilisant Nginx.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">Commencer</a>
+                        <a href="#" class="btn btn-secondary">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="docker-card">
+                        <i class="fab fa-docker"></i>
+                        <h3>Docker Container</h3>
+                        <p>Nginx serveur web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="container">
+                <h2>Fonctionnalités</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Performance</h3>
+                        <p>Haute performance grâce à la containerisation avec Docker.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive</h3>
+                        <p>Design adaptatif qui s'ajuste à tous les écrans.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Sécurisé</h3>
+                        <p>Environnement isolé et sécurisé avec Docker.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content">
+            <div class="container">
+                <div class="content-card">
+                    <h2>À propos de ce projet</h2>
+                    <p>Ce site web est hébergé dans un conteneur Docker avec Nginx comme serveur web. L'utilisation de Docker permet une déploiement rapide et une isolation des dépendances.</p>
+                    <p>Le design est entièrement responsive et s'adapte aux mobiles, tablettes et ordinateurs de bureau.</p>
+                    <button id="counterBtn" class="btn btn-primary">Cliquez-moi : <span id="counter">0</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-docker"></i>
+                    <span>DockerSite</span>
+                </div>
+                <p>&copy; 2025 Mon Benjamin09e. Tous droits réservés. Une série d'apprentissage complète sur Docker</p>
+                <div class="social-links">
+                    <a href="https://github.com/Benjamin09e"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-docker"></i></a>
+                    <a href="https://linkedin.com/in/benjamin-ekia"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

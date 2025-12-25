@@ -1,0 +1,15 @@
+# Fichiers Git
+.git
+.gitignore
+
+# Dépendances
+node_modules
+__pycache__
+*.pyc
+
+# IDE
+.vscode
+.idea
+
+# Documentation
+README.md
