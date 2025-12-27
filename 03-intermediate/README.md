@@ -143,7 +143,7 @@ docker run -d \
 docker exec -it mysql-new mysql -proot -e "SHOW DATABASES;"
 ```
 
-**Résultat** : La base de données `myapp` est toujours présente, démontrant l'efficacité du mécanisme de volume. 🎉
+**Résultat** : La base de données `myapp` est toujours présente, démontrant l'efficacité du mécanisme de volume. 
 
 ### Volumes anonymes
 
@@ -241,9 +241,9 @@ Un tmpfs mount stocke les données en mémoire RAM uniquement. Les données sont
 
 ### Cas d'usage
 
-✅ **Données temporaires** : Cache, sessions  
-✅ **Données sensibles** : Mots de passe, tokens (jamais écrits sur disque)  
-✅ **Performance** : Accès ultra-rapide  
+**Données temporaires** : Cache, sessions  
+**Données sensibles** : Mots de passe, tokens (jamais écrits sur disque)  
+**Performance** : Accès ultra-rapide  
 
 ### Syntaxe
 
@@ -278,12 +278,12 @@ docker run -d \
 |-----------------|---------|-------------|-------|
 | **Gestion** | Docker | OS | RAM |
 | **Performance** | Excellente | Moyenne | Ultra-rapide |
-| **Persistance** | ✅ Oui | ✅ Oui | ❌ Non |
-| **Partage** | ✅ Multi-conteneurs | ✅ Multi-conteneurs | ❌ Un seul |
-| **Backup** | ✅ Facile | ⚠️ Manuel | ❌ Impossible |
-| **Portable** | ✅ Oui | ❌ Dépend de l'hôte | ✅ Oui |
-| **Production** | ✅ Recommandé | ❌ Non | ⚠️ Spécifique |
-| **Développement** | ⚠️ Possible | ✅ Idéal | ❌ Rare |
+| **Persistance** |  Oui |  Oui |  Non |
+| **Partage** |  Multi-conteneurs |  Multi-conteneurs |  Un seul |
+| **Backup** |  Facile |  Manuel |  Impossible |
+| **Portable** |  Oui |  Dépend de l'hôte |  Oui |
+| **Production** |  Recommandé |  Non |  Spécifique |
+| **Développement** | ⚠️ Possible |  Idéal |  Rare |
 
 ### Quand utiliser quoi ?
 
@@ -449,7 +449,7 @@ docker system prune -a
 
 ## Bonnes pratiques
 
-### ✅ À faire
+###  À faire
 
 - **Nommer les volumes** : Volumes nommés plutôt qu'anonymes
 - **Utiliser des volumes pour la production** : Meilleure performance et gestion
@@ -458,7 +458,7 @@ docker system prune -a
 - **Monitoring** : Surveiller l'espace disque
 - **Documentation** : Documenter quel volume contient quoi
 
-### ❌ À éviter
+###  À éviter
 
 - **Volumes anonymes** : Difficiles à gérer
 - **Données sensibles en bind mount** : Préférer les volumes
