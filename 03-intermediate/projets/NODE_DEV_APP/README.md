@@ -143,17 +143,17 @@ docker volume prune
 
 ## Avantages de cette configuration
 
-### 🚀 **Développement rapide**
+### **Développement rapide**
 - Modification instantanée du code
 - Pas besoin de rebuild l'image
 - Environnement isolé et reproductible
 
-### 🔧 **Gestion des dépendances**
+### **Gestion des dépendances**
 - `node_modules` protégé des différences OS
 - Pas de conflits de versions
 - Installation initiale unique
 
-### 📦 **Portabilité**
+### **Portabilité**
 - Même environnement sur toutes les machines
 - Configuration versionnée via Dockerfile
 - Facile à partager avec l'équipe
