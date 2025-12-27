@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DockerMaster - Formation Docker Professionnelle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker<span class="logo-highlight">Master</span></span>
+                </a>
+                <div class="nav-links">
+                    <a href="#home">Accueil</a>
+                    <a href="#formations">Formations</a>
+                    <a href="#features">Fonctionnalités</a>
+                    <a href="#about">À propos</a>
+                    <a href="#contact" class="btn-nav">Commencer</a>
+                </div>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Maîtrisez Docker comme un <span class="highlight">Expert</span></h1>
+                    <p>Formez-vous à la conteneurisation avec Docker grâce à nos cours interactifs, projets pratiques et
+                        certifications reconnues par l'industrie.</p>
+                    <div class="hero-buttons">
+                        <a href="#formations" class="btn-primary">Explorer les formations</a>
+                        <a href="#features" class="btn-secondary">
+                            <i class="fas fa-play-circle"></i> Voir la démo
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>2,500+</h3>
+                            <p>Étudiants formés</p>
+                        </div>
+                        <div class="stat">
+                            <h3>98%</h3>
+                            <p>Satisfaction</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Heures de cours</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="docker-card">
+                        <div class="card-header">
+                            <i class="fab fa-docker"></i>
+                            <h3>Terminal Docker</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">docker run -d nginx</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">docker ps</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">docker compose up</span>
+                            </div>
+                            <div class="terminal-output">
+                                <span class="output-success">✔ Conteneur démarré avec succès</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formations -->
+    <section id="formations" class="formations">
+        <div class="container">
+            <h2>Nos Formations Docker</h2>
+            <p class="section-subtitle">Des parcours adaptés à tous les niveaux, du débutant à l'expert</p>
+
+            <div class="formations-grid">
+                <!-- Carte 1 -->
+                <div class="formation-card">
+                    <div class="formation-level beginner">Débutant</div>
+                    <div class="formation-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <h3>Docker Fundamentals</h3>
+                    <p>Apprenez les bases de Docker : images, conteneurs, Dockerfile et Docker Hub.</p>
+                    <ul class="formation-features">
+                        <li><i class="fas fa-check"></i> 15 leçons vidéo</li>
+                        <li><i class="fas fa-check"></i> 5 projets pratiques</li>
+                        <li><i class="fas fa-check"></i> Certification incluse</li>
+                        <li><i class="fas fa-check"></i> Support communautaire</li>
+                    </ul>
+                    <div class="formation-price">
+                        <span class="price">49€</span>
+                        <span class="price-old">99€</span>
+                    </div>
+                    <a href="#" class="btn-formation">S'inscrire maintenant</a>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="formation-card featured">
+                    <div class="formation-level intermediate">Intermédiaire</div>
+                    <div class="formation-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Docker Avancé</h3>
+                    <p>Maîtrisez Docker Compose, réseaux, volumes et déploiement en production.</p>
+                    <ul class="formation-features">
+                        <li><i class="fas fa-check"></i> 25 leçons vidéo</li>
+                        <li><i class="fas fa-check"></i> 8 projets pratiques</li>
+                        <li><i class="fas fa-check"></i> Certification avancée</li>
+                        <li><i class="fas fa-check"></i> Mentorat personnel</li>
+                    </ul>
+                    <div class="formation-price">
+                        <span class="price">89€</span>
+                        <span class="price-old">149€</span>
+                    </div>
+                    <a href="#" class="btn-formation">S'inscrire maintenant</a>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="formation-card">
+                    <div class="formation-level expert">Expert</div>
+                    <div class="formation-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Orchestration avec Kubernetes</h3>
+                    <p>Déployez et gérez vos conteneurs à l'échelle avec Kubernetes.</p>
+                    <ul class="formation-features">
+                        <li><i class="fas fa-check"></i> 30 leçons vidéo</li>
+                        <li><i class="fas fa-check"></i> 10 projets pratiques</li>
+                        <li><i class="fas fa-check"></i> Certification expert</li>
+                        <li><i class="fas fa-check"></i> Accès à vie</li>
+                    </ul>
+                    <div class="formation-price">
+                        <span class="price">129€</span>
+                        <span class="price-old">199€</span>
+                    </div>
+                    <a href="#" class="btn-formation">S'inscrire maintenant</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fonctionnalités -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Pourquoi choisir DockerMaster</h2>
+            <p class="section-subtitle">Une expérience d'apprentissage unique et moderne</p>
+
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Environnement Pratique</h3>
+                    <p>Accédez à un environnement Docker en ligne pour pratiquer sans installation.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progression Visualisée</h3>
+                    <p>Suivez votre avancement avec des tableaux de bord interactifs et des métriques.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Communauté Active</h3>
+                    <p>Rejoignez une communauté de développeurs et échangez avec des experts Docker.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certifications Reconnues</h3>
+                    <p>Obtenez des certifications valorisées par les entreprises du secteur tech.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Transformez votre carrière avec Docker</h2>
+                    <p>DockerMaster est la plateforme de référence pour l'apprentissage de Docker et des technologies de
+                        conteneurisation. Notre méthode pédagogique unique allie théorie et pratique pour une maîtrise
+                        complète.</p>
+
+                    <div class="about-points">
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Contenu à jour</h4>
+                                <p>Nos formations sont régulièrement mises à jour avec les dernières versions de Docker.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Support réactif</h4>
+                                <p>Notre équipe d'experts répond à vos questions sous 24 heures.</p>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Projets réels</h4>
+                                <p>Appliquez vos connaissances sur des projets concrets similaires à des environnements
+                                    professionnels.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-primary">Démarrer l'aventure</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="floating-element el1">
+                            <i class="fab fa-docker"></i>
+                            <p>Conteneurs</p>
+                        </div>
+                        <div class="floating-element el2">
+                            <i class="fas fa-server"></i>
+                            <p>Orchestration</p>
+                        </div>
+                        <div class="floating-element el3">
+                            <i class="fas fa-network-wired"></i>
+                            <p>Réseaux</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Inscription -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Prêt à maîtriser Docker ?</h2>
+            <p class="section-subtitle">Inscrivez-vous pour obtenir un accès gratuit à un module de découverte</p>
+
+            <div class="contact-form">
+                <form id="inscriptionForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Votre nom complet" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Votre adresse email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="level" required>
+                            <option value="" disabled selected>Votre niveau actuel</option>
+                            <option value="debutant">Débutant</option>
+                            <option value="intermediaire">Intermédiaire</option>
+                            <option value="expert">Expert</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Commencer gratuitement
+                    </button>
+                </form>
+                <div class="form-info">
+                    <p><i class="fas fa-shield-alt"></i> Vos données sont sécurisées et ne seront jamais partagées</p>
+                    <p><i class="fas fa-gift"></i> Accédez immédiatement à 3 leçons gratuites</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker<span class="logo-highlight">Master</span></span>
+                    </a>
+                    <p>La plateforme d'apprentissage Docker la plus moderne et efficace.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Benjamin09e"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-docker"></i></a>
+                        <a href="https://linkedin.com/in/benjamin-ekia"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Formations</h4>
+                    <a href="#">Docker Fundamentals</a>
+                    <a href="#">Docker Avancé</a>
+                    <a href="#">Kubernetes</a>
+                    <a href="#">Docker pour DevOps</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Ressources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Tutoriels gratuits</a>
+                    <a href="#">FAQ</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Entreprise</h4>
+                    <a href="#">À propos</a>
+                    <a href="#">Carrières</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mon Benjamin09e. Tous droits réservés. Une série d'apprentissage complète sur Docke</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
